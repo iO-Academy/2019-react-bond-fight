@@ -1,0 +1,23 @@
+@font-face {
+    font-family: Skyfall Done;
+    src: url(../../assets/fonts/SkyFallDone.ttf);
+}
+
+.header-container {
+    text-align: center;
+}
+
+.title,
+.description {
+    font-family: "Skyfall Done";
+}
+
+.title {
+    font-size: 5rem;
+    text-shadow: 3px 3px 0 #D60000;
+}
+
+.description {
+    font-size: 2rem;
+    margin-top: -5%;
+}
