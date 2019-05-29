@@ -1,0 +1,55 @@
+.card {
+    background-color: #FFFFFF;
+    border: #000000 5px solid;
+}
+
+.card img {
+    width: 80%;
+    margin: 10px 0 0 0;
+    border: #000000 2px solid;
+}
+
+.year {
+    font-family: Rockwell;
+}
+
+.card:hover {
+    box-shadow: 10px 12px 18px 1px #D60000;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+    .card {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .card {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .card {
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        font-size: 0.3rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card {
+        font-size: 0.1rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .card {
+        font-size: 0.01rem;
+    }
+}

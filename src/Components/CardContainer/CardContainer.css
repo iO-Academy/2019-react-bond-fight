@@ -1,12 +1,54 @@
 .cardContainer {
     margin: 0 auto;
     width: 1000px;
-    height: 500px;
-    background-color: lawngreen;
+    overflow: auto;
+    text-align: center;
+    padding: 30px;
+    font-family: "Skyfall Done";
+}
+
+.cardContainer article {
+    height: 100%;
+    width: 33%;
+    float: left;
 }
 
 .cardContainer div {
     float: left;
-    width: 33%;
-    text-align: center;
+    width: 30%;
+    margin-top: 200px;
+    font-size: 3rem;
+    color: #D60000;
+}
+
+.cardContainer article:last-child {
+    float: right;
+}
+
+@media screen and (max-width: 1100px) {
+    .cardContainer {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .cardContainer {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .cardContainer {
+        width: 400px;
+    }
+
+    .cardContainer div {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cardContainer {
+        width: 300px;
+    }
 }
