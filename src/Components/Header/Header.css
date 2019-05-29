@@ -5,19 +5,23 @@
 
 .header-container {
     text-align: center;
+    padding-top: 5%;
 }
 
 .title,
 .description {
     font-family: "Skyfall Done";
+    color: #ffffff;
 }
 
 .title {
-    font-size: 5rem;
-    text-shadow: 3px 3px 0 #D60000;
+    font-size: 6vw;
+    text-shadow: 4px 4px 0 #D60000;
+    margin: 0;
+
 }
 
 .description {
-    font-size: 2rem;
-    margin-top: -5%;
+    font-size: 4vw;
+    margin-top: 2%;
 }

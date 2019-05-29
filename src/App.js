@@ -1,14 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Card from "./Components/CardContainer/Card/Card";
+import 'normalize.css'
 import Header from './Components/Header/Header'
+import Card from "./Components/CardContainer/Card/Card";
 
 function App() {
   return (
-    <div className="App">
-    <Header/>
-    <Card/>
+    <div className="app">
+      <Header/>
+      <Card/>
     </div>
   );
 }
