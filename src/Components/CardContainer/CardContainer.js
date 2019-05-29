@@ -2,6 +2,8 @@ import React from 'react'
 import './CardContainer.css'
 import Card from "./Card/Card";
 import GifLoader from 'react-gif-loader';
+const uniqueRandomArray = require('unique-random-array')
+
 
 class CardContainer extends React.Component {
     constructor(props) {
@@ -16,7 +18,9 @@ class CardContainer extends React.Component {
         fetch('http://127.0.0.1:3001/Bond_Films')
             .then(data => data.json())
             .then(data => {
-                this.setState({films: data})
+                const random = uniqueRandomArray(data)
+                let twoRandomFilms = [random(), random()]
+                this.setState({films: data, selectedFilms: twoRandomFilms})
             })
     }
 
@@ -25,12 +29,12 @@ class CardContainer extends React.Component {
             height: "70vh"
         }
 
-        if(this.state.films !== undefined) {
+        if(this.state.selectedFilms !== undefined) {
             return (
                 <section className="cardContainer">
-                    <Card selectedFilm={this.state.films[0]}/>
+                    <Card selectedFilm={this.state.selectedFilms[0]}/>
                     <div>VS</div>
-                    <Card selectedFilm={this.state.films[1]}/>
+                    <Card selectedFilm={this.state.selectedFilms[1]}/>
                 </section>
             )
         } else {

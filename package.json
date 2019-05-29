@@ -8,7 +8,8 @@
     "react-gif-loader": "^0.6.0",
     "react-loading": "^2.0.3",
     "react-scripts": "3.0.1",
-    "react-spinners-loading": "^1.0.0"
+    "react-spinners-loading": "^1.0.0",
+    "unique-random-array": "^2.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
