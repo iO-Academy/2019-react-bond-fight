@@ -44,7 +44,7 @@ class CardContainer extends React.Component {
                         loading={true}
                         imageSrc="https://media.giphy.com/media/nbKKMfmeDknzq/giphy.gif"
                         imageStyle={overlayBlockStyle}
-                        overlayBackground="rgba(0,0,0,0.5)"
+                        overlayBackground="rgba(0,0,0,0)"
                     />
                 </div>
             )

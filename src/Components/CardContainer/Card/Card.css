@@ -1,6 +1,7 @@
 .card {
     background-color: #FFFFFF;
     border: #000000 5px solid;
+    min-height: 350px;
 }
 
 .card img {
