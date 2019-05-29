@@ -1,0 +1,12 @@
+.cardContainer {
+    margin: 0 auto;
+    width: 1000px;
+    height: 500px;
+    background-color: lawngreen;
+}
+
+.cardContainer div {
+    float: left;
+    width: 33%;
+    text-align: center;
+}
