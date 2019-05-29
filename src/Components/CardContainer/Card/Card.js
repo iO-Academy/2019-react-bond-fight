@@ -1,4 +1,5 @@
 import React from 'react';
+import './Card.css'
 
 class Card extends React.Component {
 
@@ -12,7 +13,7 @@ class Card extends React.Component {
     render() {
 
         return(
-            <div>
+            <div className="card">
                 {/*<img src={this.state.selectedFilms.image}/>*/}
                 {/*<p>Name:{this.state.selectedFilms.name}</p>*/}
                 {/*<p>Original Release:{this.state.selectedFilms.release_date}</p>*/}
