@@ -11,7 +11,7 @@
 }
 
 .year {
-    font-family: Rockwell;
+    font-family: Rockwell, Arial, sans-serif;
 }
 
 .card:hover {

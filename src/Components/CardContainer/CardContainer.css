@@ -1,10 +1,15 @@
+@font-face {
+    font-family: Skyfall Done;
+    src: url(../../assets/fonts/SkyFallDone.ttf);
+}
+
 .cardContainer {
     margin: 0 auto;
     width: 1000px;
     overflow: auto;
     text-align: center;
     padding: 20px;
-    font-family: "Skyfall Done";
+    font-family: "Skyfall Done", Arial, sans-serif;
 }
 
 .cardContainer article {
