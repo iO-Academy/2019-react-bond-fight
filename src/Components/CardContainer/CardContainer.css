@@ -29,26 +29,31 @@
     .cardContainer {
         width: 800px;
     }
+
+    .cardContainer div {
+        margin-top: 170px;
+    }
 }
 
 @media screen and (max-width: 900px) {
     .cardContainer {
         width: 500px;
     }
+
+    .cardContainer div {
+        margin-top: 110px;
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 780px) {
-    .cardContainer {
-        width: 400px;
-    }
-
     .cardContainer div {
         font-size: 1.5rem;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .cardContainer {
-        width: 300px;
+    .cardContainer div {
+        margin-top: 100px;
     }
 }
