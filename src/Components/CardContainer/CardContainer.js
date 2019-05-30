@@ -37,9 +37,9 @@ class CardContainer extends React.Component {
         if(this.state.selectedFilms !== undefined) {
             return (
                 <section className="cardContainer">
-                    <Card selectedFilm={this.state.selectedFilms[0]}/>
+                    <Card getFilms={this.getFilms} selectedFilm={this.state.selectedFilms[0]}/>
                     <div>VS</div>
-                    <Card selectedFilm={this.state.selectedFilms[1]}/>
+                    <Card getFilms={this.getFilms} selectedFilm={this.state.selectedFilms[1]}/>
                 </section>
             )
         } else {
