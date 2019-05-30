@@ -2,6 +2,7 @@ import React from 'react'
 import './CardContainer.css'
 import Card from "./Card/Card";
 import GifLoader from 'react-gif-loader';
+import DrEvil from '../../assets/images/DrEvil.gif'
 const uniqueRandomArray = require('unique-random-array')
 
 class CardContainer extends React.Component {
@@ -18,7 +19,7 @@ class CardContainer extends React.Component {
             .then(data => {
                 const random = uniqueRandomArray(data)
                 let twoRandomFilms = [random(), random()]
-                this.setState({films: data, selectedFilms: twoRandomFilms})
+                // this.setState({films: data, selectedFilms: twoRandomFilms})
             })
     }
 
@@ -40,7 +41,7 @@ class CardContainer extends React.Component {
                 <div>
                     <GifLoader
                         loading={true}
-                        imageSrc="https://media.giphy.com/media/nbKKMfmeDknzq/giphy.gif"
+                        imageSrc={DrEvil}
                         imageStyle={overlayBlockStyle}
                         overlayBackground="rgba(0,0,0,0)"
                     />
