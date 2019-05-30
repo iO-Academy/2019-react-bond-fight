@@ -19,7 +19,7 @@ class CardContainer extends React.Component {
             .then(data => {
                 const random = uniqueRandomArray(data)
                 let twoRandomFilms = [random(), random()]
-                // this.setState({films: data, selectedFilms: twoRandomFilms})
+                this.setState({films: data, selectedFilms: twoRandomFilms})
             })
     }
 

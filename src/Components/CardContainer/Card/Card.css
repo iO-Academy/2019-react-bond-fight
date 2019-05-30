@@ -1,7 +1,7 @@
 .card {
     background-color: #FFFFFF;
     border: #000000 5px solid;
-    min-height: 500px;
+    min-height: 525px;
 }
 
 .card img {
@@ -21,7 +21,7 @@
 
 @media screen and (max-width: 1100px) {
     .card {
-        min-height: 480px;
+        min-height: 460px;
     }
 }
 
@@ -42,7 +42,7 @@
 @media screen and (max-width: 780px) {
     .card {
         font-size: 0.5rem;
-        min-height: 270px;
+        min-height: 260px;
     }
 }
 
