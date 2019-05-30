@@ -24,7 +24,7 @@ class CardContainer extends React.Component {
                     let twoRandomFilms = [random(), random()]
                     this.setState({films: json.data, selectedFilms: twoRandomFilms})
                 } else {
-                    this.setState({error:'Something broke'})
+                    this.setState({error:'Something broke...'})
                 }
             })
     }
@@ -45,7 +45,7 @@ class CardContainer extends React.Component {
         } else {
             return (
                 <div>
-                    <p>{this.state.error}</p>
+                    <p className="error">{this.state.error}</p>
                     <GifLoader
                         loading={true}
                         imageSrc={DrEvil}
