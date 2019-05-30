@@ -5,7 +5,7 @@ class Card extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            movie: this.props.selectedFilm
+            film: this.props.selectedFilm
         }
     }
 
@@ -13,9 +13,9 @@ class Card extends React.Component {
 
         return(
             <article className="card">
-                <img src={this.state.movie.image}/>
-                <h2>{this.state.movie.name}</h2>
-                <h4 className="year">{this.state.movie.release_date}</h4>
+                <img src={this.state.film.image}/>
+                <h2>{this.state.film.name}</h2>
+                <h4 className="year">{this.state.film.release_date}</h4>
             </article>
         )
     }
