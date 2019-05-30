@@ -38,27 +38,14 @@
     .cardContainer div {
         display: none;
     }
+
+    .cardContainer article {
+        width: 45%;
+    }
 }
 
 @media screen and (max-width: 900px) {
     .cardContainer {
         width: 500px;
-    }
-
-    .cardContainer div {
-        margin-top: 110px;
-        font-size: 2rem;
-    }
-}
-
-@media screen and (max-width: 780px) {
-    .cardContainer div {
-        font-size: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .cardContainer div {
-        margin-top: 100px;
     }
 }
