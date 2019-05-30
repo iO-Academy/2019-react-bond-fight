@@ -7,7 +7,6 @@ class Card extends React.Component {
         this.state = {
             movie: this.props.selectedFilm
         }
-
     }
 
     render() {

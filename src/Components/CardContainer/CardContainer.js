@@ -4,12 +4,10 @@ import Card from "./Card/Card";
 import GifLoader from 'react-gif-loader';
 const uniqueRandomArray = require('unique-random-array')
 
-
 class CardContainer extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {
-        }
+        this.state = {}
 
         this.getFilms()
     }
@@ -39,7 +37,7 @@ class CardContainer extends React.Component {
             )
         } else {
             return (
-                <div className="error">
+                <div>
                     <GifLoader
                         loading={true}
                         imageSrc="https://media.giphy.com/media/nbKKMfmeDknzq/giphy.gif"
