@@ -1,0 +1,51 @@
+@font-face {
+    font-family: Skyfall Done;
+    src: url(../../assets/fonts/SkyFallDone.ttf);
+}
+
+.cardContainer {
+    margin: 0 auto;
+    width: 1000px;
+    overflow: auto;
+    text-align: center;
+    padding: 20px;
+    font-family: "Skyfall Done", Arial, sans-serif;
+}
+
+.cardContainer article {
+    height: 100%;
+    width: 33%;
+    float: left;
+}
+
+.cardContainer div {
+    float: left;
+    width: 34%;
+    margin-top: 230px;
+    font-size: 3rem;
+    color: #D60000;
+}
+
+.cardContainer article:last-child {
+    float: right;
+}
+
+@media screen and (max-width: 1100px) {
+    .cardContainer {
+        width: 700px;
+    }
+
+    .cardContainer div {
+        display: none;
+    }
+
+    .cardContainer article {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .cardContainer {
+        width: 500px;
+    }
+}

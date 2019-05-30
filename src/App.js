@@ -1,14 +1,14 @@
-import React from 'react';
-import './App.css';
-import 'normalize.css'
+import React from 'react'
+import './App.css'
 import Header from './Components/Header/Header'
-import Card from "./Components/CardContainer/Card/Card";
+import CardContainer from "./Components/CardContainer/CardContainer"
+import 'normalize.css'
 
 function App() {
   return (
     <div className="app">
       <Header/>
-      <Card/>
+      <CardContainer/>
     </div>
   );
 }
