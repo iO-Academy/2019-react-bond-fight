@@ -6,7 +6,7 @@ import 'normalize.css'
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Header/>
       <CardContainer/>
     </div>
