@@ -8,18 +8,24 @@ const uniqueRandomArray = require('unique-random-array')
 class CardContainer extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {}
+        this.state = {
+            error: ''
+        }
 
         this.getFilms()
     }
 
     getFilms = () => {
         fetch('http://127.0.0.1:3001/Bond_Films')
-            .then(data => data.json())
-            .then(data => {
-                const random = uniqueRandomArray(data)
-                let twoRandomFilms = [random(), random()]
-                this.setState({films: data, selectedFilms: twoRandomFilms})
+            .then(response => response.json())
+            .then(json => {
+                if (json.success === true) {
+                    const random = uniqueRandomArray(json.data)
+                    let twoRandomFilms = [random(), random()]
+                    this.setState({films: json.data, selectedFilms: twoRandomFilms})
+                } else {
+                    this.setState({error:'Something broke...'})
+                }
             })
     }
 
@@ -39,6 +45,7 @@ class CardContainer extends React.Component {
         } else {
             return (
                 <div>
+                    <p className="error">{this.state.error}</p>
                     <GifLoader
                         loading={true}
                         imageSrc={DrEvil}
